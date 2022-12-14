@@ -2,7 +2,7 @@ from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.core.window import Window
 from kivymd.uix.screen import Screen
-Window.size = (300,500)
+Window.size = (310,500)
 
 screen_helper = """
 Screen:
@@ -20,7 +20,7 @@ Screen:
         MDBottomAppBar:
 
             MDTopAppBar:
-                title: "Брой коли: {cars_len}"
+                title: "Брой коли: 0"
                 font_size: '1sp'
                 icon: "tools"
                 type: "bottom"

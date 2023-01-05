@@ -1,7 +1,7 @@
 
 # Android app for cars database
-![image](https://user-images.githubusercontent.com/115580585/207412686-b4510f67-4106-4703-8b34-ba252c99f0be.png)
-## Features
+
+![gif](https://user-images.githubusercontent.com/115580585/210894127-8fe5ff7c-182f-4d46-b356-0c8f10120e1b.gif)
 
  - The app asks for car brand and model
  - The app asks for information about what needs to be done to the car

@@ -1,0 +1,10 @@
+<h2>Автокомплекс "ВЕРОС"</h2>
+<h1>Регистрация</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Регистрация">
+</form>
+
+<p>Имаш профил? <a href="">Вход</p>

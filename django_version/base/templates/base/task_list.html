@@ -9,6 +9,12 @@
 <h1>Автокомпелкс "ВЕРОС" {{color}}</h1>
 
 <a href="{% url 'task-create' %}">Добави автомобил</a>
+
+<form method="GET">
+    <input type="text" name='search-area' value="{{search_input}}">
+    <input type="submit" value="Търсене">
+</form>
+
 <table>
     <tr>
         <th>Марка и модел</th>

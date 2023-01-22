@@ -9,7 +9,8 @@
     <tr>
         <td>{{task.title}}</td>
         <td><a href="{% url 'task' task.id %}">Отвори</a></td>
-        <td><a href="{% url 'task' task.id %}">Редактирай</a></td>
+        <td><a href="{% url 'task-update' task.id %}">Редактирай</a></td>
+        <td><a href="{% url 'task-delete' task.id %}">Изтрий</a></td>
     </tr>
     {% empty %}
         <h3>Няма добавени автомобили</h3>

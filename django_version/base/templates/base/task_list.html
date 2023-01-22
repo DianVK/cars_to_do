@@ -1,0 +1,15 @@
+<h1>Автокомпелкс "ВЕРОС" </h1>
+
+<table>
+    <tr>
+        <th>Марка и модел</th>
+    </tr>
+    {% for task in object_list %}
+    <tr>
+        <th>{{task.title}}</th>
+    </tr>
+    {% empty %}
+        <h3>Няма добавени автомобили</h3>
+    {% endfor %}
+</table>
+

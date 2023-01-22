@@ -8,7 +8,8 @@
     {% for task in tasks %}
     <tr>
         <td>{{task.title}}</td>
-        <td><a href="{% url 'task' task.id %}">View</a></td>
+        <td><a href="{% url 'task' task.id %}">Отвори</a></td>
+        <td><a href="{% url 'task' task.id %}">Редактирай</a></td>
     </tr>
     {% empty %}
         <h3>Няма добавени автомобили</h3>

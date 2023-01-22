@@ -1,3 +1,6 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
 {% if request.user.is_authenticated %}
 <p>{{request.user}}</p>
 <a href="{% url 'logout' %}">Изход</a>
@@ -23,7 +26,7 @@
     {% for task in tasks %}
     <tr>
         <td>{{task.title}}</td>
-        <td><a href="{% url 'task' task.id %}">Отвори</a></td>
+
         <td><a href="{% url 'task-update' task.id %}">Редактирай</a></td>
         <td><a href="{% url 'task-delete' task.id %}">Изтрий</a></td>
     </tr>
@@ -32,3 +35,4 @@
     {% endfor %}
 </table>
 
+{% endblock content %}

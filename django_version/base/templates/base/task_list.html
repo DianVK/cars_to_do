@@ -3,10 +3,13 @@
 <table>
     <tr>
         <th>Марка и модел</th>
+        <th></th>
     </tr>
     {% for task in object_list %}
     <tr>
-        <th>{{task.title}}</th>
+        <td>{{task.title}}</td>
+        <td><a href="{% url 'task' task.id%}">Подробности</a></td>
+
     </tr>
     {% empty %}
         <h3>Няма добавени автомобили</h3>

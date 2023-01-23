@@ -13,15 +13,35 @@
     {% endif %}
     </div>
 
-<hr>
-<h1>Автокомплекс "ВЕРОС" {{color}}</h1>
-
-<a href="{% url 'task-create' %}">Добави автомобил</a>
-
+<!-- <a href="{% url 'task-create' %}">Добави автомобил</a>
 <form method="GET">
     <input type="text" name='search-area' value="{{search_input}}">
     <input type="submit" value="Търсене">
-</form>
+</form> -->
+
+<div class="task-items-wrapper">
+    {% for task in tasks %}
+        <div class="task-wrapper">
+            {% if task.complete  %}
+                <div class="task-title">
+                    <div class="task-complete-icon"></div>
+                    <i><s><a href="{% url 'task-update' task.id %}">{{task}}</a></s></i>
+                </div>
+                <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a></td>
+            {% else %}
+            <div class="task-title">
+                <div class="task-incomplete-icon"></div>
+                <a href="{% url 'task-update' task.id %}">{{task}}</a>
+            </div>
+
+            <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a></td>
+            {% endif %}
+
+        </div>
+    {% empty %}
+        <h3>Няма добавени автомобили</h3>
+    {% endfor %}
+</div>
 
 <table>
     <tr>

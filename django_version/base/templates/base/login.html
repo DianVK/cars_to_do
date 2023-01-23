@@ -1,3 +1,6 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
 <h2>Автокомплекс "ВЕРОС"</h2>
 <h1>Вход</h1>
 
@@ -8,3 +11,5 @@
 </form>
 
 <p>Нов потребител? <a href="{% url 'register' %}">Регистрирай се!</p>
+
+{% endblock content %}

@@ -1,15 +1,22 @@
 {% extends 'base/main.html' %}
 {% block content %}
 
-<h2>Автокомплекс "ВЕРОС"</h2>
-<h1>Вход</h1>
 
-<form method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value="Вход">
-</form>
+<div class="header-bar">
+    <h1>Автокомплекс "ВЕРОС"</h1>
+    <h1>Вход</h1>
+</div>
 
-<p>Нов потребител? <a href="{% url 'register' %}">Регистрирай се!</p>
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" value="Вход">
+    </form>
+    <p>Нов потребител? <a href="{% url 'register' %}">Регистрирай се!</p>
+</div>
+
+
+
 
 {% endblock content %}

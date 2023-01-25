@@ -1,7 +1,8 @@
 
 #Cars To Do Android App
 #Django Version
-![django_version](https://user-images.githubusercontent.com/115580585/214635235-59053c8b-917f-493f-969b-e4e1b0af26ab.gif)
+
+![django_version](https://user-images.githubusercontent.com/115580585/214636541-f53917cf-e4cc-4971-a9d0-e37c1eda666c.gif)
 
  - Register and login form
  - The app asks for car brand and model

@@ -1,9 +1,9 @@
 
-# Android app for cars database
-#Kivy Version
+#Cars To Do Android App
+#Django Version
+![django_version](https://user-images.githubusercontent.com/115580585/214635235-59053c8b-917f-493f-969b-e4e1b0af26ab.gif)
 
-![gif](https://user-images.githubusercontent.com/115580585/210894127-8fe5ff7c-182f-4d46-b356-0c8f10120e1b.gif)
-
+ - Register and login form
  - The app asks for car brand and model
  - The app asks for information about what needs to be done to the car
  - The app saves the given information including the date of input in a db file
@@ -14,3 +14,8 @@
 
  - https://facebook.com/autoveros/
  - https://instagram.com/autoveros
+
+
+#Kivy Version
+
+![gif](https://user-images.githubusercontent.com/115580585/210894127-8fe5ff7c-182f-4d46-b356-0c8f10120e1b.gif)

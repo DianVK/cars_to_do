@@ -5,9 +5,10 @@
 ![django_version](https://user-images.githubusercontent.com/115580585/214636541-f53917cf-e4cc-4971-a9d0-e37c1eda666c.gif)
 
  - Register and login form
- - The app asks for car brand and model
- - The app asks for information about what needs to be done to the car
- - The app saves the given information including the date of input in a db file
+ - Search engine
+ - Input for Car brand and model
+ - Input for description of what needs to be done to the Car
+ - The app saves the given information including in a db file for every user
  - When the car is fixed you are able to cross it out
  - When the car is taken by the customer you are able to delete the car from the list
 ## This project is custom for:

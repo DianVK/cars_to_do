@@ -17,7 +17,6 @@
  - https://facebook.com/autoveros/
  - https://instagram.com/autoveros
 
-
 #Kivy Version
 
 ![gif](https://user-images.githubusercontent.com/115580585/210894127-8fe5ff7c-182f-4d46-b356-0c8f10120e1b.gif)
